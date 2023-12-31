@@ -34,9 +34,9 @@ const HamburgerMenu = () => {
 	return (
 		<>
 			<div onClick={() => setToggle((prev) => !prev)} className="space-y-1.5 cursor-pointer z-50 lg:hidden">
-				<motion.span animate={{ rotateZ: toggle ? 45 : 0, y: toggle ? 8 : 0 }} className="block w-5 h-0.5 bg-slate-700 dark:bg-white"></motion.span>
-				<motion.span animate={{ width: toggle ? 0 : 16 }} className="block w-4 h-0.5 bg-slate-700 dark:bg-white"></motion.span>
-				<motion.span animate={{ rotateZ: toggle ? -45 : 0, y: toggle ? -8 : 0 }} className="block w-5 h-0.5 bg-slate-700 dark:bg-white"></motion.span>
+				<motion.span animate={{ rotateZ: toggle ? 45 : 0, y: toggle ? 8 : 0 }} className="block w-5 h-0.5 bg-slate-400 dark:bg-white"></motion.span>
+				<motion.span animate={{ width: toggle ? 0 : 16 }} className="block w-4 h-0.5 bg-slate-400 dark:bg-white"></motion.span>
+				<motion.span animate={{ rotateZ: toggle ? -45 : 0, y: toggle ? -8 : 0 }} className="block w-5 h-0.5 bg-slate-400 dark:bg-white"></motion.span>
 			</div>
 			{toggle && <MobileMenu />}
 		</>
@@ -46,7 +46,7 @@ const HamburgerMenu = () => {
 const MobileMenu = () => {
 	return (
 		<motion.div variants={menuMotion} animate="visible" initial="hidden" className="fixed top-0 left-0 w-screen h-screen bg-white dark:bg-neutral-900 flex items-center justify-center z-40">
-			<ul className="space-y-6 font-semibold text-slate-700 dark:text-white">
+			<ul className="space-y-6 font-semibold dark:text-white text-slate-400">
 				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
 					<Link href="/">Home</Link>
 				</motion.li>

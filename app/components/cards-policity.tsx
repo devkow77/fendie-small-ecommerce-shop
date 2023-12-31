@@ -41,7 +41,7 @@ const CardsPolicity = () => {
 		<section className="grid grid-cols-2 gap-4 mt-4 mb-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
 			{policityCards.length &&
 				policityCards.map(({ icon, text }, key) => (
-					<div key={key} className="aspect-square bg-neutral-800 rounded-2xl p-4 flex flex-col items-center justify-center hover:bg-neutral-700 duration-300 cursor-pointer">
+					<div key={key} className="aspect-square dark:bg-neutral-800 bg-slate-300 rounded-2xl p-4 flex flex-col items-center justify-center dark:hover:bg-neutral-700 hover:bg-slate-500 duration-300 cursor-pointer">
 						{icon}
 						<p className="text-center text-xs lg:text-base">{text}</p>
 					</div>

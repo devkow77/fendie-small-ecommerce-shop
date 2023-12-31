@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<div className="max-w-7xl mx-auto">
-				<div className="h-[2px] bg-neutral-800" />
+				<div className="h-[2px] dark:bg-neutral-800 bg-slate-200" />
 				<section className="grid grid-cols-1 gap-6 px-6 py-6 lg:grid-cols-3 lg:py-8">
 					<div>
 						<h1 className="font-semibold lg:text-lg">Fendie</h1>
@@ -41,17 +41,17 @@ const Footer = () => {
 						<h3 className="font-semibold lg:text-lg">Socials</h3>
 						<div className="flex items-center gap-4 mt-2">
 							<Link href="https://www.instagram.com" target="_blank">
-								<div className="p-2 bg-neutral-800 rounded-2xl hover:bg-neutral-600 duration-200 xl:text-xl">
+								<div className="p-2 dark:bg-neutral-800 bg-slate-300 rounded-2xl dark:hover:bg-neutral-600 hover:bg-slate-500 duration-200 xl:text-xl">
 									<FaInstagram />
 								</div>
 							</Link>
 							<Link href="https://www.facebook.com" target="_blank">
-								<div className="p-2 bg-neutral-800 rounded-2xl hover:bg-neutral-600 duration-200 xl:text-xl">
+								<div className="p-2 dark:bg-neutral-800 bg-slate-300 rounded-2xl dark:hover:bg-neutral-600 hover:bg-slate-500 duration-200 xl:text-xl">
 									<FaFacebookF />
 								</div>
 							</Link>
 							<Link href="https://twitter.com" target="_blank">
-								<div className="p-2 bg-neutral-800 rounded-2xl hover:bg-neutral-600 duration-200 xl:text-xl">
+								<div className="p-2 dark:bg-neutral-800 bg-slate-300 rounded-2xl dark:hover:bg-neutral-600 hover:bg-slate-500 duration-200 xl:text-xl">
 									<FaTwitter />
 								</div>
 							</Link>
@@ -60,7 +60,7 @@ const Footer = () => {
 				</section>
 			</div>
 			<div>
-				<div className="h-[2px] bg-neutral-800" />
+				<div className="h-[2px] dark:bg-neutral-800 bg-slate-200" />
 				<p className="text-sm leading-6 text-center py-4 px-4 xl:text-base">Fendie shop is unofficial website created for self purposes by devkow77. All rights reserved 2023 December &copy;</p>
 			</div>
 		</footer>

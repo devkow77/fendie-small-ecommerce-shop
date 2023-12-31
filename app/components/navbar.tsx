@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { HamburgerMenu, NavigationDesktopMenu, SearchBar } from './index';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { ModeToggle } from './mode-toggle';
+import { FaShoppingBag, FaShoppingBasket, FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = () => {
 	const matches = useMediaQuery('(min-width: 768px)');
@@ -19,11 +20,15 @@ const Navbar = () => {
 					{matches && (
 						<>
 							<NavigationDesktopMenu />
-							<ModeToggle />
+							<div className="flex items-center gap-4 xl:text-xl">
+								<FaShoppingBag />
+								<ModeToggle />
+							</div>
 						</>
 					)}
 					{!matches && (
 						<div className="flex items-center gap-4">
+							<FaShoppingBag />
 							<ModeToggle />
 							<HamburgerMenu />
 						</div>

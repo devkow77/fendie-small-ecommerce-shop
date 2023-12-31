@@ -8,8 +8,8 @@ export default function Home() {
 		<main>
 			<div className="max-w-7xl mx-auto px-6 space-y-8 xl:space-y-12">
 				<header>
-					<h2 className="text-3xl font-black md:text-4xl lg:text-5xl xl:text-6xl">
-						FENDIE <br /> <span className="text-stone-400">BEST</span> CLOTHES <br /> IN NEW YORK{' '}
+					<h2 className="text-3xl font-black text-slate-400 dark:text-white md:text-4xl lg:text-5xl xl:text-6xl">
+						FENDIE <br /> <span className="text-slate-300 dark:text-stone-400">BEST</span> CLOTHES <br /> IN NEW YORK{' '}
 					</h2>
 					<section className="grid grid-cols-4 grid-rows-4 gap-4 h-[25rem] rounded-2xl mt-4 lg:h-[28rem]">
 						<div className="relative col-span-4 row-span-3 bg-neutral-700 rounded-2xl overflow-hidden sm:col-span-2 sm:row-span-4">
@@ -19,7 +19,7 @@ export default function Home() {
 							<Link href="/products/men">
 								<Image src="/men.jpg" alt="men products section image" width={600} height={600} className="absolute w-full h-full object-cover object-center rounded-2xl" />
 								<div className="absolute w-full h-full bg-black bg-opacity-60 rounded-2xl flex items-center justify-center hover:bg-transparent duration-500">
-									<h3 className="text-lg font-extrabold sm:text-2xl xl:text-4xl">MEN</h3>
+									<h3 className="text-lg font-extrabold text-white sm:text-2xl xl:text-4xl">MEN</h3>
 								</div>
 							</Link>
 						</div>
@@ -27,7 +27,7 @@ export default function Home() {
 							<Link href="/products/women">
 								<Image src="/women.jpg" alt="women products section image" width={600} height={600} className="absolute w-full h-full object-cover rounded-2xl object-center" />
 								<div className="absolute w-full h-full bg-black bg-opacity-60 rounded-2xl flex items-center justify-center hover:bg-transparent duration-500">
-									<h3 className="text-lg font-extrabold sm:text-2xl xl:text-4xl">WOMEN</h3>
+									<h3 className="text-lg font-extrabold text-white sm:text-2xl xl:text-4xl">WOMEN</h3>
 								</div>
 							</Link>
 						</div>
