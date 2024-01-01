@@ -61,7 +61,7 @@ const Footer = () => {
 			</div>
 			<div>
 				<div className="h-[2px] dark:bg-neutral-800 bg-slate-200" />
-				<p className="text-sm leading-6 text-center py-4 px-4 xl:text-base">Fendie shop is unofficial website created for self purposes by devkow77. All rights reserved 2023 December &copy;</p>
+				<p className="text-sm leading-6 text-center py-4 px-4 xl:text-base xl:leading-8">Fendie shop is unofficial website created for self purposes by devkow77. All rights reserved 2023 December &copy;</p>
 			</div>
 		</footer>
 	);

@@ -67,17 +67,17 @@ export function NavigationDesktopMenu() {
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/docs" legacyBehavior passHref>
+					<Link href="/sales" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Sales</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/docs" legacyBehavior passHref>
+					<Link href="/faq" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Faq</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/docs" legacyBehavior passHref>
+					<Link href="/contact" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Contact</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
