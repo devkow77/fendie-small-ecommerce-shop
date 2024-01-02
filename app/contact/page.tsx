@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactForm } from '../components/index';
+import { ContactForm, GoogleMap } from '../components/index';
 
 const Contact = () => {
 	return (
@@ -8,9 +8,9 @@ const Contact = () => {
 				<h2 className="text-2xl font-black md:text-3xl xl:text-4xl">
 					CONTACT <br /> <span className="text-orange-200">FORM</span>
 				</h2>
-				<p className="text-sm leading-7 mt-2 lg:text-base lg:leading-8">For any questions, feedback, or partnership inquiries, feel free to drop me a message—I'm always eager to hear from you!</p>
-				<div>
-					<section className="aspect-video w-full max-h-80 bg-neutral-800 rounded-2xl my-4"></section>
+				<p className="text-sm leading-7 mt-2 lg:text-base lg:leading-8">For any questions, feedback, or partnership inquiries, feel free to drop me a message. I'm always eager to hear from you!</p>
+				<div className="md:flex md:flex-row md:items-center md:gap-6 lg:mt-6">
+					<GoogleMap />
 					<ContactForm />
 				</div>
 			</div>
