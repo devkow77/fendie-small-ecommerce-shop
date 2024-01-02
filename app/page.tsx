@@ -2,11 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { CarouselPremieres } from './components/carousel-premieres';
 import { CardsPolicity } from './components';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
 	return (
 		<main>
-			<div className="max-w-7xl mx-auto px-6 space-y-8 xl:space-y-12">
+			<div className="max-w-7xl mx-auto px-6 pb-6 space-y-8 xl:space-y-12">
 				<header>
 					<h2 className="text-3xl font-black text-slate-400 dark:text-white md:text-4xl lg:text-5xl xl:text-6xl">
 						FENDIE <br /> <span className="text-slate-300 dark:text-stone-400">BEST</span> CLOTHES <br /> IN NEW YORK{' '}
@@ -56,6 +57,21 @@ export default function Home() {
 					</h2>
 					<CardsPolicity />
 				</article>
+				{/* <article>
+					<h2 className="text-2xl font-black md:text-3xl xl:text-4xl">
+						NOT SURE <br /> <span className="text-orange-200">SIZE?</span>
+					</h2>
+					<p className="text-sm leading-7 max-w-xl my-2 lg:text-base lg:leading-8">Find your perfect fit with ease check our size chart for accurate measurements before making a selection.</p>
+					<Button>
+						<Link href="/size">Check Your Size</Link>
+					</Button>
+				</article> */}
+				{/* <article>
+					<div className="grid grid-cols-2 gap-4">
+						<div className="aspect-square max-h-80 bg-neutral-800 rounded-2xl"></div>
+						<div className="aspect-square max-h-80 bg-neutral-800 rounded-2xl"></div>
+					</div>
+				</article> */}
 			</div>
 		</main>
 	);

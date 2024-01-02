@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
 
 const MobileMenu = () => {
 	return (
-		<motion.div variants={menuMotion} animate="visible" initial="hidden" className="fixed top-0 left-0 w-screen h-screen bg-white dark:bg-neutral-900 flex items-center justify-center z-40">
+		<motion.div variants={menuMotion} animate="visible" initial="hidden" className="fixed top-0 left-0 w-screen h-[100vh] bg-white dark:bg-neutral-900 flex items-center justify-center z-40">
 			<ul className="space-y-6 font-semibold dark:text-white text-slate-400">
 				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
 					<Link href="/">Home</Link>
