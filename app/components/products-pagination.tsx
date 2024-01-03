@@ -11,9 +11,7 @@ export function ProductsPagination() {
 					<PaginationLink href="/products?page=1">1</PaginationLink>
 				</PaginationItem>
 				<PaginationItem>
-					<PaginationLink href="/products?page=2" isActive>
-						2
-					</PaginationLink>
+					<PaginationLink href="/products?page=2">2</PaginationLink>
 				</PaginationItem>
 				<PaginationItem>
 					<PaginationLink href="/products?page=3">3</PaginationLink>

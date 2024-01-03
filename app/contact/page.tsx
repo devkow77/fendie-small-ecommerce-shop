@@ -1,5 +1,7 @@
 import React from 'react';
 import { ContactForm, GoogleMap } from '../components/index';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Contact = () => {
 	return (
@@ -12,6 +14,12 @@ const Contact = () => {
 				<div className="md:flex md:flex-row md:items-center md:gap-6 lg:mt-6">
 					<GoogleMap />
 					<ContactForm />
+				</div>
+				<div className="mt-6 space-y-4">
+					<p className="text-sm leading-7 opacity-80 lg:text-base lg:leading-8">Would like to check frequently asked questions before get in touch with me?</p>
+					<Button>
+						<Link href="/faq">Check Faq</Link>
+					</Button>
 				</div>
 			</div>
 		</article>

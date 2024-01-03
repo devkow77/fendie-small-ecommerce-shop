@@ -10,5 +10,6 @@ import { AccordionFaq } from './accordion-faq';
 import { ContactForm } from './contact-form';
 import GoogleMap from './google-map';
 import { ProductsPagination } from './products-pagination';
+import { NewsletterForm } from './newsletter-form';
 
-export { Navbar, NavigationDesktopMenu, HamburgerMenu, ThemeProvider, Ad, Footer, SearchBar, CardsPolicity, AccordionFaq, ContactForm, GoogleMap, ProductsPagination };
+export { Navbar, NavigationDesktopMenu, HamburgerMenu, ThemeProvider, Ad, Footer, SearchBar, CardsPolicity, AccordionFaq, ContactForm, GoogleMap, ProductsPagination, NewsletterForm };

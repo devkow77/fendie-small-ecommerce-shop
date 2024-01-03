@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { CarouselPremieres } from './components/carousel-premieres';
-import { CardsPolicity } from './components';
-import { Button } from '@/components/ui/button';
+import { CardsPolicity, NewsletterForm } from './components';
 
 export default function Home() {
 	return (
@@ -57,21 +56,30 @@ export default function Home() {
 					</h2>
 					<CardsPolicity />
 				</article>
-				{/* <article>
-					<h2 className="text-2xl font-black md:text-3xl xl:text-4xl">
-						NOT SURE <br /> <span className="text-orange-200">SIZE?</span>
-					</h2>
-					<p className="text-sm leading-7 max-w-xl my-2 lg:text-base lg:leading-8">Find your perfect fit with ease check our size chart for accurate measurements before making a selection.</p>
-					<Button>
-						<Link href="/size">Check Your Size</Link>
-					</Button>
-				</article> */}
-				{/* <article>
-					<div className="grid grid-cols-2 gap-4">
-						<div className="aspect-square max-h-80 bg-neutral-800 rounded-2xl"></div>
-						<div className="aspect-square max-h-80 bg-neutral-800 rounded-2xl"></div>
+				<article>
+					<div className="grid grid-cols-2 gap-4 lg:gap-6">
+						<div className="col-span-2 aspect-video w-full max-w-4xl mx-auto max-h-40 bg-neutral-900 border-2 border-orange-200 rounded-2xl p-4 sm:flex sm:flex-col sm:items-center sm:justify-center lg:p-6">
+							<p className="text-sm leading-7 sm:text-center lg:text-base lg:leading-8">Subscribe to our newsletter for exclusive updates and special offers. Stay in the loop with the latest news delivered directly to your inbox.</p>
+							<NewsletterForm />
+						</div>
+						<div className="relative aspect-video w-full max-h-48 bg-neutral-800 rounded-2xl cursor-pointer">
+							<Link href="/contact">
+								<Image src="/contact.jpg" alt="contact section image" width={600} height={600} className="absolute w-full h-full object-cover rounded-2xl object-center" />
+								<div className="absolute w-full h-full bg-black bg-opacity-60 rounded-2xl flex items-center justify-center hover:bg-transparent duration-500">
+									<h3 className="text-lg font-extrabold text-white sm:text-2xl xl:text-4xl">FAQ</h3>
+								</div>
+							</Link>
+						</div>
+						<div className="relative aspect-video w-full max-h-48 bg-neutral-800 rounded-2xl cursor-pointer">
+							<Link href="/faq">
+								<Image src="/faq.jpg" alt="faq section image" width={600} height={600} className="absolute w-full h-full object-cover rounded-2xl object-center" />
+								<div className="absolute w-full h-full bg-black bg-opacity-60 rounded-2xl flex items-center justify-center hover:bg-transparent duration-500">
+									<h3 className="text-lg font-extrabold text-white sm:text-2xl xl:text-4xl">CONTACT</h3>
+								</div>
+							</Link>
+						</div>
 					</div>
-				</article> */}
+				</article>
 			</div>
 		</main>
 	);

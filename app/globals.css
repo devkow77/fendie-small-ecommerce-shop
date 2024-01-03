@@ -5,3 +5,7 @@
 ::placeholder {
 	@apply text-white dark:text-slate-400 !important;
 }
+
+html {
+	scroll-behavior: smooth;
+}

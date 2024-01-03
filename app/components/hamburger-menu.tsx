@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { Dispatch, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -38,40 +38,40 @@ const HamburgerMenu = () => {
 				<motion.span animate={{ width: toggle ? 0 : 16 }} className="block w-4 h-0.5 bg-slate-400 dark:bg-white"></motion.span>
 				<motion.span animate={{ rotateZ: toggle ? -45 : 0, y: toggle ? -8 : 0 }} className="block w-5 h-0.5 bg-slate-400 dark:bg-white"></motion.span>
 			</div>
-			{toggle && <MobileMenu />}
+			{toggle && <MobileMenu toggle={toggle} setToggle={setToggle} />}
 		</>
 	);
 };
 
-const MobileMenu = () => {
+const MobileMenu = ({ toggle, setToggle }: { toggle: boolean; setToggle: Dispatch<boolean> }) => {
 	return (
 		<motion.div variants={menuMotion} animate="visible" initial="hidden" className="fixed top-0 left-0 w-screen h-[100vh] bg-white dark:bg-neutral-900 flex items-center justify-center z-40">
 			<ul className="space-y-6 font-semibold dark:text-white text-slate-400">
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="">
 					<Link href="/">Home</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/products">Products</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/men">Men</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/women">Women</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/sales">Sales</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/new">New's</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/sizes">Sizes</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/faq">Faq</Link>
 				</motion.li>
-				<motion.li variants={itemMotion} className="cursor-pointer hover:text-neutral-400">
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/contact">Contact</Link>
 				</motion.li>
 			</ul>
