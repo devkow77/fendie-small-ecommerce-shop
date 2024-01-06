@@ -69,6 +69,9 @@ const MobileMenu = ({ toggle, setToggle }: { toggle: boolean; setToggle: Dispatc
 					<Link href="/sizes">Sizes</Link>
 				</motion.li>
 				<motion.li variants={itemMotion} className="hover:text-orange-300">
+					<Link href="/news">News</Link>
+				</motion.li>
+				<motion.li variants={itemMotion} className="hover:text-orange-300">
 					<Link href="/faq">Faq</Link>
 				</motion.li>
 				<motion.li variants={itemMotion} className="hover:text-orange-300">

@@ -76,11 +76,6 @@ export function NavigationDesktopMenu() {
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<Link href="/news" legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Sales</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href="/faq" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>News</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
